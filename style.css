@@ -147,6 +147,10 @@ background-color: #F4F4F5;
    .css-input:focus {
        outline:none;
    }
+   .css-input::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+  }
    .inputDiv {
     font-size: 16px;
     border-width: 0px;
@@ -268,7 +272,7 @@ display:flex;
 }
 
 .xx{
-	margin-top:55px;
+	margin-top:25px;
 	display:grid;
 	  grid-template-columns: auto auto auto;
 	}
@@ -331,7 +335,7 @@ margin-top:25px;
 	width:10px;
 	height:10px;
 	border-radius:50%;
-	display:inline-block;
+	/* display:inline-block; */
 	float:right;
 	margin-top:5px;
 	
@@ -351,5 +355,14 @@ margin-top:25px;
 .note>div:hover{
 	
 	cursor:pointer;
+}
+#folder-name{
+    visibility: hidden;
+    margin-top: 50px;
+    margin-left: 25px;
+    font-size: 16px;
+}
+.xx-x{
+    display: none;
 }
 	
