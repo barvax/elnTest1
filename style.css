@@ -1,8 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Fredoka+One&family=Sen&display=swap');
 
 body{
    background-color: #E7DED0;
    color: #310E3A;
-  
+  font-family: 'Fredoka One', cursive;
+}
+p{
+	
+	font-family: 'Sen', sans-serif;
+}
+h2{
+	
+	font-family: 'Sen', sans-serif;
+}
+
+h5{
+	
+	font-family: 'Sen', sans-serif;
+}
+h6{
+	
+	font-family: 'Sen', sans-serif;
 }
 .main-div{
     display: grid;
@@ -71,8 +89,13 @@ border-radius: 35px 0 0 35px;
 }
 .menu-left-div>h2{
     margin-left: 15px;
+	font-size:16px;
+	margin-top:25px;
  }
  .menu-left-div>h2:hover{
+    cursor: pointer;
+ }
+  .menu-left-div>i:hover{
     cursor: pointer;
  }
  .menu-left{
@@ -90,7 +113,7 @@ background-color: #F4F4F5;
 
  }
  .myButton1 {
-	background-color:#404040;
+	background-color:#101322;
 	border-radius:7px;
 	border:1px solid #404040;
 	display:inline-block;
@@ -98,11 +121,12 @@ background-color: #F4F4F5;
 	color:#ffffff;
 
 	font-size:17px;
-	padding:16px 31px;
+	padding:4px 31px;
 	text-decoration:none;
     white-space: nowrap; 
     text-overflow: ellipsis;
     height: 100%;
+
 	
 }
 .mid-right-top-search-div {
@@ -114,9 +138,10 @@ background-color: #F4F4F5;
     background-color: rgba(0,0,0,0.0);
     border-width: 0px;
     color: white;
-    margin-left: 10%;
+    margin-left: 15%;
     position: relative;
    bottom: 20px;
+  font-family: 'Sen', sans-serif;
     
    }
    .css-input:focus {
@@ -131,12 +156,17 @@ background-color: #F4F4F5;
     display: inline-block;
     border-radius: 12px;
     width: 20%;
-    height: 34px;
+    height: 10px;
     margin-top: 39px;
     margin-right: 10px;
     margin-left: 40%;
 }
 
+.middle-middle-div{
+    width:85%;
+    margin: auto;
+   
+}
 .middle-middle-div{
     width:85%;
     margin: auto;
@@ -150,6 +180,13 @@ white-space: nowrap;
 .project-mid-div>h1{
     font-size: 26px;
     margin-bottom: 0;
+	display:inline-block;
+}
+.project-mid-div>i{
+    margin-left:10px;
+}
+.project-mid-div>i:hover{
+    cursor:pointer;
 }
 .project-mid-div>h5{
     color: #9f9f9f;
@@ -165,19 +202,154 @@ white-space: nowrap;
 }
 .box{
     width:300px;
-    height: 250px;
+    height: 170px;
     border-radius: 20px;
     background-color: #310E3A;
     margin-left: 20px;
+	font-family: 'Sen', sans-serif;
+   
+
+}
+.box > div{
+	padding-top:30px;
+ color:white;
+ width:80%;
+ margin:auto;
+   
+
+}
+.box:hover{
+cursor:pointer;
    
 
 }
 .form{
     position: relative;
+	bottom:6px;
 }
-/* .form-1{  margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); margin-left: 20px;
-    } */
+.middle-bottom-div{
+	margin-top:25px;
+
+	height:400px;
+	display:grid;
+	grid-template-columns: 50% 50%;
+}
+.middle-bottom-div>div>p{
+	width:90%;
+}
+.zz{
+	width:90%;
+	height:70px;
+background-color: white;
+	margin-top:10px;
+		-webkit-box-shadow: 5px 5px 16px 0px rgba(0,0,0,0.1); 
+box-shadow: 5px 5px 16px 0px rgba(0,0,0,0.1);
+border-radius:10px;
+display:flex;
+    justify-content: space-evenly;
+}
+
+
+
+.zz-1{
+	background-color:red;
+	padding:10px;
+	border-radius:5px;
+}
+.zz-2{
+	background-color:green;
+	padding:10px;
+	border-radius:5px;
+}
+.zz-3{
+	background-color:yellow;
+	padding:10px;
+	border-radius:5px;
+}
+
+.xx{
+	margin-top:55px;
+	display:grid;
+	  grid-template-columns: auto auto auto;
+	}
+.xx>div{
+	width:120px;
+	height:80px;
+	    background-color: white;
+	margin:5px;
+	border-radius:10px;
+	color: #310E3A;
+	-webkit-box-shadow: 5px 5px 16px 0px rgba(0,0,0,0.2); 
+box-shadow: 5px 5px 16px 0px rgba(0,0,0,0.2);
+}	
+.xx{
+width:100px;
+}
+.xx>div>i{
+	margin-top:25px;
+	margin-left:30px;
+	
+}	
+.xx>div>h6{
+	margin-top:10px;
+	margin-left:30px;
+}
+.xx>div>i:hover{
+cursor:pointer;
+	
+}	
+.right-top-div{
+	width:90%;
+	margin:auto;
+	height:700px;
+	overflow-y:scroll;
+	
+}
+.right-top-div::-webkit-scrollbar {
+  display: none;
+}
+.right-top-div-1{
+	
+	margin-top:36px;
+	
+}
+.note{
+	
+	width:70%;
+	margin:auto;
+	background-color:yellow;
+	border-radius:5px 15px 5px 5px;
+	background-color:white;
+		padding:15px ;
+			-webkit-box-shadow: 5px 5px 16px 0px rgba(0,0,0,0.2); 
+box-shadow: 5px 5px 16px 0px rgba(0,0,0,0.2);
+margin-top:25px;
+
+}
+.note>div{
+	background-color:red;
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	display:inline-block;
+	float:right;
+	margin-top:5px;
+	
+	
+}
+.note > h6{
+	display:inline-block;
+	font-size:14px;
+	margin:0;
+
+}
+.note>h5{
+	color:gray;
+	font-size:12px; 
+	
+}
+.note>div:hover{
+	
+	cursor:pointer;
+}
+	
