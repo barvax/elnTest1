@@ -1,5 +1,5 @@
 
-
+var timeLineTempID= null;
 var folders = [
     {
         folderName: 'folder-1',
@@ -8,10 +8,13 @@ var folders = [
             {
                 folderName: 'sub folder-1',
                  image: 'fa-book',
+				 page: 'timeline.html'
+				
             },
             {
                 folderName: 'sub folder-2',
                  image: 'fa-book',
+				  page:'timeline.html'
             },
         ]
     },
@@ -22,10 +25,12 @@ var folders = [
             {
                 folderName: 'sub folder-1',
                  image: 'fa-book',
+				  page:'timeline.html'
             },
             {
                 folderName: 'sub folder-2',
                  image: 'fa-book',
+				  page:'timeline.html'
             },
         ]
     },
@@ -149,7 +154,7 @@ function EnterSubFolder(index) {
 
 }
 
-function CreateFolders(index) {
+function CreateFolders(index , pos) {
     const root = document.getElementById('xx');
     for (let i = 0; i < index; i++) {
         var div = document.createElement('div');
@@ -162,7 +167,8 @@ function CreateFolders(index) {
         image.onclick = function (){
             EnterSubFolder(i)
             DeleteFolders()
-            CreateSubFolders(folders[i].subFolder.length)
+            CreateSubFolders(folders[i].subFolder.length , i )
+			
         }
         var h6 = document.createElement('h6');
         h6.innerHTML = folders[i].folderName;
@@ -173,7 +179,7 @@ function CreateFolders(index) {
 
 }
 
-function CreateSubFolders(index){
+function CreateSubFolders(index ,pos){
     const root = document.getElementById('xx');
 
     for (let i = 0; i < index; i++) {
@@ -188,7 +194,9 @@ function CreateSubFolders(index){
         image.onclick = function (){
            var section = document.getElementById('middle-middle-div');
            section.style.display='none';
-          
+		   
+		console.log(folders[pos].subFolder[i].page)
+          window.location.href = folders[pos].subFolder[i].page;
            
         }
         var h6 = document.createElement('h6');
@@ -217,9 +225,46 @@ function DeleteFolders(){
         
     }
 }
+if(document.getElementById('xx')!=null){
+	CreateFolders(folders.length);
+}
 
-CreateFolders(folders.length);
 
 function Home(){
-    location.reload();
+    window.location.href = "index.html";
+}
+
+function ChangeYear(){
+	
+	var x = document.getElementById(timeLineTempID);
+	if(x!=null){
+		var z = (x.getAttribute('data-year'));
+		console.log(z);
+		
+		
+		var input =document.getElementById('yearInput'); 
+		x.setAttribute('data-year', input.value)
+		console.log(input.value);
+		
+			var input =document.getElementById('dataInput'); 
+		x.setAttribute('data-text', input.value)
+		var div = document.getElementById('input-div-timeline');
+	div.style.display = 'none'
+		
+	}
+	
+}
+if(document.getElementById("year1")!=null){
+	
+	document.getElementById("year1").addEventListener("click",function(){asdf('year1')} );
+	document.getElementById("year2").addEventListener("click",function(){asdf('year2')} );
+		document.getElementById("year3").addEventListener("click",function(){asdf('year3')} );
+			document.getElementById("year4").addEventListener("click",function(){asdf('year4')} );
+				document.getElementById("year5").addEventListener("click",function(){asdf('year5')} );
+}
+
+function asdf (temp){
+	var x = document.getElementById('input-div-timeline');
+	x.style.display = 'block';
+	timeLineTempID = temp;
 }
