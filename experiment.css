@@ -1,0 +1,11 @@
+.ron-exp {
+    background-color: #FBF5EE;
+    border-radius: 0 35px 35px 0;
+    overflow-y: scroll;
+    height: 80vh;
+    padding-top: 70px;
+}
+
+.ron-exp::-webkit-scrollbar {
+  display: none;
+}

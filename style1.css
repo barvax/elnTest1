@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.outerBox{
+    width: 95%;
+    height:800px;
+    background-color: #E0E3ED;
+    margin: auto;
+   
+    border-radius: 10px;
+    
+}
+.mid1{
+    height: 50px;
+}
+.innerBox{
+    width: 80%;
+    height: 90%;
+border-radius: 10px;
+    background-color: #252A40;
+    margin: auto;
+    -webkit-box-shadow: 2px 4px 25px 10px rgba(0,0,0,0.47); 
+    box-shadow: 2px 4px 25px 10px rgba(0,0,0,0.47);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+     
+}
+.right{
+    width: 99%;
+    height: 98%;
+border-radius: 10px;
+    background-color: white;
+    margin-top: 7px;
+}
+.leftTitle{
+    color: gray;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    padding-left: 18%;
+    padding-top: 20%;
+}
+.leftTitle-b{
+    color: #74778A;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    padding-left: 18%;
+   
+}
+.leftTitle-b1{
+    color: #74778A;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    padding-left: 18%;
+   
+}
+.leftTitle-c{
+    color: gray;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    padding-left: 18%;
+    
+   
+}
+.leftTitle-d{
+    color: #74778A;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    font-size: 14px;
+   margin-top: 22px;
+   padding-left: 10px;
+   display: inline-block;
+   
+   
+}
+
+
+     
+.projectsTitle{
+    display: flex;
+    
+}
+.upperRow{
+    display: grid;
+    padding-left: 13%;
+    grid-template-columns: auto auto auto ;
+    height: 250px;
+    overflow-y: scroll;
+    width: 100%;
+  
+}
+.upperRow::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.css-input1 {
+  
+ background-color: rgba(0,0,0,0.0);
+ border-width: 0px;
+ color: white;
+ margin-left: 10%;
+ position:relative;
+ bottom:5px;
+ 
+}
+.css-input1:focus {
+    outline:none;
+}
+.inputDiv{
+    font-size: 16px;
+    border-width: 0px;
+padding: 10px;
+    background-color: #3B3F53;
+    color: #FBF5EE;
+  display: inline-block;
+    border-radius: 12px;
+    width: 300px;
+	margin-left:0;
+}
+::placeholder { 
+    color: #74778A;
+    font-size: 12px;
+    opacity: 1; 
+}
+.subTitle{
+    color: #74778A;
+    font-size: 12px;
+    margin-top: 25px;
+}
+.title{
+    color: white;
+    font-size: 36px;
+    margin: auto;
+    margin-top: 20px;
+  
+}
+.title:hover {
+    cursor: pointer;
+}
+.newProjectImg{
+    width: 25px;
+    color: #ffffff;
+   
+    
+}
+.ham1{
+    position:absolute;
+    top: 12%;
+    left: 15%;
+    
+}
+.ham1:hover{
+    cursor: pointer;
+}
+

@@ -1,5 +1,6 @@
 
 var timeLineTempID= null;
+var folderSubToggle = false;
 var folders = [
     {
         folderName: 'folder-1',
@@ -233,7 +234,9 @@ if(document.getElementById('xx')!=null){
 function Home(){
     window.location.href = "index.html";
 }
-
+function GoToMain(){
+	 window.location.href = "main.html";
+}
 function ChangeYear(){
 	
 	var x = document.getElementById(timeLineTempID);
@@ -267,4 +270,62 @@ function asdf (temp){
 	var x = document.getElementById('input-div-timeline');
 	x.style.display = 'block';
 	timeLineTempID = temp;
+}
+
+function ShoeMeSub(){
+		var box =document.getElementById('xx'); 
+	DeleteFolders();
+		var projectFolders = document.getElementById('project-folders'); 
+	if(!folderSubToggle){
+		CreateSubProject(5 );
+		folderSubToggle = true;
+		var name = document.getElementById('folder-name'); 
+		 
+		name.style.visibility="hidden";
+		projectFolders.innerHTML = "Sub Projects"
+	}else{
+		   CreateFolders(folders.length);
+		   folderSubToggle = false;
+		   	projectFolders.innerHTML = "Project Folders"
+	}
+	
+}
+
+function CreateSubProject(index ){
+    const root = document.getElementById('xx');
+
+    for (let i = 0; i < index; i++) {
+        var div = document.createElement('div');
+        root.append(div);
+        div.className='folder';
+        var image = document.createElement('i');
+        image.classList.add('fa-solid');
+       // image.classList.add(folders[index].subFolder[i].image);
+        //div.append(image);
+       
+      /*  image.onclick = function (){
+           var section = document.getElementById('middle-middle-div');
+           section.style.display='none';
+		   
+		console.log(folders[pos].subFolder[i].page)
+          window.location.href = folders[pos].subFolder[i].page;
+           
+        }*/
+        var h6 = document.createElement('h6');
+     
+        h6.innerHTML = "Sub Project " +(i+1);
+        div.append(h6);
+       
+       
+        
+      
+     
+            
+    
+           
+    
+       
+
+    }
+
 }
